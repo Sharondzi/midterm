@@ -14,6 +14,7 @@ header {
     margin: 0px;
     padding: 20px;
     background-color: #9bc1bc;
+    overflow: hidden;
 }
 
 nav {
@@ -42,11 +43,6 @@ main {
     padding: 20px;
 }
 
-
-.left {
-    float: left;
-}
-
 article {
     float: left;
     width: 73%;
@@ -59,23 +55,71 @@ h2 {
 .part {
     background-color: #fffaf4bf;
     border-radius: 30px;
-    padding: 20px;
-    margin: 10px;
+    padding: 30px 45px 30px 45px;
+    margin: 20px 10px;
+    overflow: hidden;
+}
 
+/*社團圖片設定*/
+
+.clubimg2_1 {
+    position: absolute;
+    left: 165px;
+    top: 140px;
+    width: 300px;
+    border-radius: 50px;
+}
+
+/*活動圖片*/
+.actimg {
+    width: 300px;
+    float: left;
+    border-radius: 15px;
+    transition-duration: 3s;
+    transition-property: width, height;
+}
+
+.actimg :hover {
+    width: 350px;
+}
+
+
+/*內文*/
+.contenttext {
+    font-size: 18px;
+    font-family: 微軟正黑體;
+    line-height: 1.25;
+    color: #5B5B5B;
+    float: right;
+}
+
+/*小標題*/
+.subtitle {
+    background-color: #fec89a;
+    color: floralwhite;
+    font-weight: bold;
+    display: inline;
+    padding: 5px;
+    border-radius: 5px;
+    width: 500px;
+    position: relative;
+    left: 540px;
+    bottom: 50px;
+    width: 400px;
 }
 
 aside {
     float: right;
     width: 20%;
     text-align: center;
-    background-color: #E9EDC9;
-
+    background-color: #ffe6a7da;
 }
 
 .clearfix {
     clear: both;
 }
 
+/*footer設定*/
 footer {
     background-color: #FAEDCD;
     padding: 10px;
@@ -88,4 +132,8 @@ footer {
     width: 50px;
     height: 50px;
 
+}
+
+div {
+    display: block;
 }
