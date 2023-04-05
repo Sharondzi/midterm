@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="webstyle.css">
 </head>
 <body>
-    <header>
+    <header id="top">
         <img src="picture/211752_glasses_icon.png">
         My website
         
@@ -22,18 +22,29 @@
     </nav>
     <main>
         <article>
+            <div class="slogn">
+                <ul> 
+                    <li>"Always do your best.What you plant now,you ill harvest later."</li>
+                    <li> 盡你所能，現在的耕耘未來都將獲得收穫。&nbsp;-Og Mandino</li>
+                </ul> 
+            </div> 
             <section id="aboutme" class="part">
                    
                     <h1>About me</h1>
-                    <p class="contenttext">
-                        我的陳瑩璇，目前就讀於中原大學會計系，一直以來都對資訊方面很感興趣，並且希望能把握學校所提供的資源，因此選擇輔修資管系
-                        希望能融合讓自己可以本科所學，增加未來的競爭力。平時個性比較內向，希望能認識更多外系的同學。平實的我喜歡看書、追劇。
-                    </p>
+                    
+                    <div class="aboutme_text">
+                        <p>
+                        我是目前就讀於中原大學會計系大三的陳瑩璇，一直以來都對資訊方面很感興趣，
+                        因此選擇輔修資管系，雖然在資訊上並不是特有天賦，但希望能夠多一樣實用的技能來增加自己
+                        未來的競爭力。我的平時個性比較內向害羞，在大學時期也沒參加什麼社團，所以希望能透過輔系
+                        來認識更多不同的人。我平常的興趣是看書、追劇，也喜歡吃美食與嘗試新事物。
+                        </p>
+                    </div>
             </section> 
             
             <section id="school" class="part">
                     <h1>Education</h1>
-                    <img src="picture/graduatee.png" style="float: right;">
+                    <div class="icon_school"><img src="picture/graduatee.png"></div>
                     <ul>
                     <li><a href="https://www.nges.chc.edu.tw/" target="_blank">南郭國小</a></li>
                     <li><a href="https://www.csjh.chc.edu.tw/ischool/publish_page/0/" target="_blank">彰興國中</a></li>
@@ -43,74 +54,107 @@
             </section>
 
             <section id="skill" class="part">
-                <h1>Skill</h1><br>
-                
-                <form action="/test.aspx" method="post">
+                <h1>Skill</h1><br><br>
+                <div class="skilltext">
+                <form action="/test.aspx" method="post" >
                     ERP&nbsp;<progress value="30" max="100" style="accent-color:#f8ad9d;"></progress>&nbsp;30% <br>
                     CSS&nbsp;<progress value="50" max="100" style="accent-color:#f4978e ;"></progress>&nbsp;50% <br>
                     html&nbsp;<progress value="60" max="100" style="accent-color:#fbc4ab ;"></progress>&nbsp; 60% <br>
                     java&nbsp;<progress value="80" max="100" style="accent-color: #f08080;"></progress>&nbsp;80%
                 </form>
-                </div>
+                
                 </div>
             </section>
             <section id="club" class="part">
                 <h1>Club</h1>
                 <div>
-                    <img src="picture/club1_1.jpg" ><br>
-                    <img src="picture/club1_2.jpg" alt="">
+                    <div class="clubimg1_3"> 
+                        <img src="picture/club1_3.jpg" style="border-radius: 20px;" width="400px"></div>
+                    <h3 class="txt1_3">幼兒園參訪</h3>
+                    <div class="clubimg1_1"><img src="picture/club1_1.jpg" style="border-radius: 20px;" width="400px"></div>
+                    <h3 class="txt1_1">教養院參訪</h3>
+                    <div class="clubimg1_2"> <img src="picture/club1_2.jpg" style="border-radius: 20px;" width="400px"></div>
+                    <h3 class="txt1_2">社區服務-大掃除</h3>
                 </div>
-                <div class="subtitle">高一</div>
-                <div class="contenttext">
-                        <p>高一時我加入了「慈幼社」。我們在社課時常到老人院、幼兒園帶他們唱歌、跳舞，讓他們感到溫暖與歡樂。
-                        我最印象深刻的一堂社課是去身心障礙者的教養院，以前我對他們的總會感到有些害怕，
-                        但現在我知道他們是非常天真善良的。在那堂課中我學習到，我們應該去了解他們的本性，而不是以外表評論來他人。</p>
+                <a href="https://www.instagram.com/sweet_47th/" class="sweetig" target="_blank"><img src="picture/sweet ig.png" alt="" width="50px">彰商彰化高商SwEeT慈幼社•̀.̫•́✧</a>
+                <div class="subtitle subtitle_club1">高一</div>
+                    <div class="contenttext clubtxt1">
+                        <p>
+                        高一時我加入了「慈幼社」。在社課中我們會學習跳手語舞以及玩團康遊戲，
+                        有時會到養護中心、幼兒園帶他們唱歌、跳舞，讓他們感到溫暖與歡樂。
+                        我最喜歡去的地方是幼兒園，平時的我本就非常喜歡小孩子，每次看到小孩子天真的微笑
+                        ，就會覺得心情輕鬆了起來。在所有設課中我最印象深刻的一堂課是去身心障礙者的教養院，以前我對他們的總會感到有些害怕，
+                        而在那堂課中我學習到，我們應該去了解他們的本性，而不是以外表或片面的刻板印象來評論來他人。
+                        </p>
+                    </div>
                 </div>
-                <hr>    
-                <div class="clubimg2_1"><img src="picture/club2_1.jpg" ></div>
-                <img src="picture/club2_2.jpg" class="clubimg2_2">
-                    <div class="subtitle">高二</div>
-                    <p class="contenttext">
-                    在高二時，擔任了編輯社的幹部，在編輯刊物時，或許有因為意見不合而與夥伴們爭吵過，但也因此了解到「溝通」的重要性，
-                    也學習到如何把自己「腦中」的想法用「口語」表達出來。在過程中我明白到許多事單靠自己的力量是無法完成的，唯有透過「彼此合作」才能成就大事。
-                    </p>
-                
+                <hr color="#F0F0F0" size="2px">    
+                <div class="try">
+                    <div class="box box-animation"></div>
+                    <div>
+                        <div class="subtitle subtitle_club2">高二</div>
+                        <div class="contenttext clubtxt2">
+                        <p >
+                        向來非常喜歡文字的我，對製作一本自己的刊物充滿著嚮往。因此在高二時，我選擇參加校內的編輯社並擔任幹部，
+                        在這之中除了學習到編輯與採訪技巧外，人際之間相處的技能也有大大的提升，編輯刊物時，必須學習如何把自己
+                        「腦中」的想法用「口語」表達出來，訓練自己的邏輯與口語表達能力。另外，有時會因為與同伴們的意見不合而僵持不下的情況，
+                        因此必須學習與他人良好的溝通，共同解決問題，找出對團隊最好的方法，這也讓我了解到溝通的重要性。製作刊物需要花費非常多的心力，
+                        在過程中我明白到許多事單靠自己的力量是無法完成的，唯有透過「彼此合作」才能成就大事。
+                        </p>
+                        </div>
+                    </div>
+                </div> 
+                  
             </section>
+            
+                 
+            
             <section id="activity" class="part">
                 <h1>Activity</h1>
                 <div>
                 <div class="actimg"> 
-                    <img src="picture/pwc3.jpg" >
+                    <img src="picture/pwc3.jpg"  style="border-radius: 20px;">
                 </div>
                 
-                <div class="subtitle">資誠數位營</div> 
-                <p class="contenttext">
+                    <div class="subtitle subtitle_activity">資誠數位營</div>
+                    <div><img src="picture/click.png" class="click"></div>
+                    <div class="contenttext activitytext">
+                    <p>    
                     近年來科技日漸進步，各大會計師事務所也走向數位轉型的時代，
                     為了能與職場更快的接軌，在今年寒假我參加了資誠所舉辦的數
-                    位營，課程內容中除了請到各大會計師檢獎外，也帶我們使用實
-                    務上實際使用的會計稽核軟體-Alteryx，收穫了充足的知識。
-                </p>
+                    位營，課程內容中除了請到各大會計師演講外，也帶我們學習實
+                    務上所使用的會計稽核軟體-Alteryx，午餐和點心也非常美味，在短短一天的活動內收穫了充足的知識，
+                    雖然課程的步調有點快，不過學習到這個技能後，我可以利用閒暇時間加以練習，讓自己能在
+                    軟體的操作上更佳的熟悉，因此我覺得這是場非常棒的活動。
+                    </p>
+                    </div>
                 </div>
             </section>
         </article>
         <aside >
             <h2 >小檔案</h2> 
-               <img src="picture/asidepic.jpg" width="200px" height="220px" style="border-radius: 50%;"> <br><br>
+               <div class="turn-animation"><img src="picture/asidepic.jpg" width="200px" height="220px" style="border-radius: 50%;"> </div>
+               <br><br>
                生日:89.10.3 <br>
                星座:天秤座 <br>
                主修:會計系<br>
                輔修:資管系<br>
                出生地:彰化<br>
-               興趣:看小說 <br>
+               興趣:看小說<br>
             </p>
         </aside>
     </main>
     <div class="clearfix"></div>
-    <footer>
+    <footer id="foot">
         Contact me: <a href="https://www.facebook.com/profile.php?id=100012558096679&sk=grid" target="_blank"><img src="picture/fb.png" class="icon"></a>&nbsp;
         <a href="https://www.instagram.com/dzi_0001/" target="_blank"><img src="picture/ig.png" class="icon"></a>&nbsp;
         <a href="mailto:shan891003@gmail.com" target="_blank"><img src="picture/mail.png" class="icon"></a>
     </footer>
    
+    <div class="up">
+        <a href="#top"><img src="picture/up.png" alt="" width="20px"></a>
+    <div class="down">
+        <a href="#foot"><img src="picture/up.png" alt="" width="20px"></a>
+   </div>
 </body>
 </html>

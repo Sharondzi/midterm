@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+
 }
 
 body {
@@ -10,13 +11,13 @@ body {
 header {
     color: black;
     font-family: Arial;
-    font-size: 50px;
+    font-size: 40px;
     margin: 0px;
-    padding: 20px;
+    padding: 10px;
     background-color: #9bc1bc;
-    overflow: hidden;
 }
 
+/*nav設定*/
 nav {
     text-align: right;
     font-family: 'Courier New', Courier, monospace;
@@ -48,8 +49,47 @@ article {
     width: 73%;
 }
 
-h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+/*跑馬燈(參考網路)*/
+.slogn {
+    height: 2cm;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    font-style: oblique;
+}
+
+.slogn>ul {
+    padding-left: 0;
+    display: flex;
+    list-style-type: none;
+    animation: slogn 15s linear infinite;
+    position: absolute;
+}
+
+.slogn>ul>li {
+    white-space: nowrap;
+    margin-right: 2cm;
+    color: #5B5B5B;
+}
+
+@keyframes slogn {
+    0% {
+        left: 100%;
+        transform: translateX(0%);
+    }
+
+    100% {
+        left: 0;
+        transform: translateX(-100%);
+    }
+
+}
+
+/*大標題*/
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    margin-top: 5px;
 }
 
 .part {
@@ -57,32 +97,7 @@ h2 {
     border-radius: 30px;
     padding: 30px 45px 30px 45px;
     margin: 20px 10px;
-    overflow: hidden;
 }
-
-/*社團圖片設定*/
-
-.clubimg2_1 {
-    position: absolute;
-    left: 165px;
-    top: 140px;
-    width: 300px;
-    border-radius: 50px;
-}
-
-/*活動圖片*/
-.actimg {
-    width: 300px;
-    float: left;
-    border-radius: 15px;
-    transition-duration: 3s;
-    transition-property: width, height;
-}
-
-.actimg :hover {
-    width: 350px;
-}
-
 
 /*內文*/
 .contenttext {
@@ -90,8 +105,33 @@ h2 {
     font-family: 微軟正黑體;
     line-height: 1.25;
     color: #5B5B5B;
-    float: right;
 }
+
+.aboutme_text {
+    position: relative;
+    top: 40px;
+    margin-bottom: 60px;
+}
+
+.clubtxt1 {
+    position: relative;
+    top: 1cm;
+}
+
+.clubtxt2 {
+    position: relative;
+    left: 12.5cm;
+    top: 100px;
+    width: 12.5cm;
+}
+
+.activitytext {
+    position: relative;
+    top: 20px;
+    margin-bottom: 60px;
+    left: 30px;
+}
+
 
 /*小標題*/
 .subtitle {
@@ -101,13 +141,178 @@ h2 {
     display: inline;
     padding: 5px;
     border-radius: 5px;
-    width: 500px;
-    position: relative;
-    left: 540px;
-    bottom: 50px;
+    font-size: 20px;
     width: 400px;
 }
 
+.subtitle_club1 {
+    position: relative;
+    left: -7cm;
+    top: 40px;
+}
+
+.subtitle_club2 {
+    position: relative;
+    left: 12.5cm;
+    top: 100px;
+}
+
+.subtitle_activity {
+    position: relative;
+    left: 30px;
+    top: 40px;
+}
+
+/*skill設定*/
+.skilltext {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*社團圖片設定*/
+/*高一*/
+.clubimg1_1 {
+    position: relative;
+    left: 8cm;
+    margin-top: 25px;
+    z-index: 2;
+    width: 450px;
+}
+
+.clubimg1_1 :hover {
+    opacity: 0.25;
+}
+
+.txt1_1 {
+    position: relative;
+    left: 12cm;
+    top: -0.5cm;
+}
+
+.clubimg1_2 {
+    position: absolute;
+    left: 15cm;
+    top: 30cm;
+    width: 450px;
+
+}
+
+.clubimg1_2 :hover {
+    transform: scale(1.25);
+    position: relative;
+    z-index: 2;
+}
+
+.txt1_2 {
+    position: relative;
+    left: 19cm;
+    bottom: 8cm;
+}
+
+.clubimg1_3 {
+    position: relative;
+    top: 75px;
+}
+
+.clubimg1_3 :hover {
+    transform: scale(1.25);
+    position: relative;
+    z-index: 3;
+}
+
+.txt1_3 {
+    position: relative;
+    top: 1.5cm;
+    left: 2cm;
+}
+
+.sweetig {
+    position: relative;
+    bottom: 100px;
+    color: #5B5B5B;
+    text-decoration: none;
+}
+
+
+/*高二*/
+.try {
+    display: flex;
+    position: relative;
+    height: 10cm;
+}
+
+/*自行發揮*/
+@keyframes change-image {
+    0% {
+        background-image: url(picture/club2_1.jpg);
+    }
+
+    25% {
+        background-image: url(picture/club2_4.jpg)
+    }
+
+    50% {
+        background-image: url(picture/club2_5.jpg);
+    }
+
+    75% {
+        background-image: url(picture/club2_6.jpg);
+    }
+
+    100% {
+        background-image: url(picture/club2_7.jpg);
+    }
+}
+
+.box {
+    width: 400px;
+    height: 280px;
+    background-color: #FEFAE0;
+    float: left;
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    border-radius: 20px;
+}
+
+.box-animation {
+    animation-name: change-image;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+/*活動圖片*/
+.actimg {
+    width: 300px;
+    position: relative;
+    top: 50px;
+    padding: 10px;
+    float: left;
+
+}
+
+.actimg :hover {
+    transform: scale(1.25);
+    z-index: 2;
+    position: relative;
+}
+
+/*小圖片*/
+.icon_school {
+    width: 25px;
+    position: relative;
+    left: 3cm;
+}
+
+.click {
+    width: 50px;
+    position: relative;
+    top: 230px;
+    margin-left: -10px;
+}
+
+
+
+/*側邊設定*/
 aside {
     float: right;
     width: 20%;
@@ -115,8 +320,42 @@ aside {
     background-color: #ffe6a7da;
 }
 
+@keyframes turnaround {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    75% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.turn-animation {
+    /*animation: turnaround 6s infinite linear;*/
+    animation-timing-function: ease-out;
+    animation-name: turnaround;
+    animation-duration: 8s;
+    animation-iteration-count: 2;
+}
+
+
+
+/*其他*/
 .clearfix {
     clear: both;
+}
+
+hr {
+    position: relative;
+    top: 2cm;
 }
 
 /*footer設定*/
@@ -134,6 +373,25 @@ footer {
 
 }
 
-div {
-    display: block;
+/*按鈕*/
+.up {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background-color: #f2a65a;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.down {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f2a65a;
+    border-radius: 50px;
+    padding: 10px;
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
 }
