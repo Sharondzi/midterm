@@ -83,11 +83,7 @@ h1 {
     color: #5B5B5B;
 }
 
-.aboutme_text {
-    position: relative;
-    top: 40px;
-    margin-bottom: 60px;
-}
+
 
 .clubtxt1 {
     position: relative;
@@ -112,7 +108,7 @@ h1 {
 
 /*小標題*/
 .subtitle {
-    background-color: #fec89a;
+    background-color: #fed0bb;
     color: floralwhite;
     font-weight: bold;
     display: inline;
@@ -171,12 +167,10 @@ h1 {
     height: 200px;
     background-color: #fffaf4bf;
     position: relative;
-
+    line-height: 30px;
 }
 
-.back:hover {
-    opacity: 1;
-}
+
 
 .name {
     color: #5e3023;
@@ -195,9 +189,35 @@ h1 {
     line-height: 30px;
 }
 
+.back:hover {
+    opacity: 1;
+}
+
 .file {
     color: #5B5B5B;
     font-family: 微軟正黑體;
+}
+
+.click2 {
+    position: relative;
+    top: -130px;
+    left: 280px;
+    transform: rotate(-30deg);
+    animation-timing-function: linear;
+    animation-name: move-up-down;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes move-up-down {
+    from {
+        transform: translateY(20px);
+    }
+
+    to {
+        transform: translateX(-15px);
+    }
 }
 
 /*skill設定*/
@@ -383,93 +403,43 @@ hr {
     left: 3cm;
 }
 
-.click {
-    width: 50px;
-    position: relative;
-    top: 230px;
-    margin-left: -10px;
+
+/*獎狀*/
+.award {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #5B5B5B;
+    font-family: 微軟正黑體;
 }
 
+.awardtxt {
+    text-align: center;
+    color: #5B5B5B;
+    font-family: 微軟正黑體;
+}
 
+.awardtxt4 {
+    position: relative;
+    left: 80px;
+    color: #5B5B5B;
+    font-family: 微軟正黑體;
+}
+
+.shadow {
+    filter: drop-shadow(12px 8px 7px rgba(74, 71, 71, 0.7));
+}
 
 
 /*側邊設定*/
 aside {
     float: right;
     width: 20%;
-    margin-top: 50px;
+    margin-top: 90px;
     text-align: center;
     background-color: #eed7c5;
     border-radius: 10px;
-}
 
-
-
-
-/*其他*/
-.clearfix {
-    clear: both;
-}
-
-
-
-/*footer設定*/
-footer {
-    background-color: #cc8b86;
-    padding: 20px;
-    color: whitesmoke;
-    text-align: center;
-    font-size: 20px;
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-
-}
-
-/*按鈕*/
-.up {
-    position: fixed;
-    bottom: 70px;
-    right: 20px;
-    background-color: #cc8b86;
-    border-radius: 50px;
-    padding: 10px;
-}
-
-.down {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #ffcad4;
-    border-radius: 50px;
-    padding: 10px;
-    -moz-transform: scaleY(-1);
-    -webkit-transform: scaleY(-1);
-    -o-transform: scaleY(-1);
-    transform: scaleY(-1);
-}
-
-
-.allschool {
-    display: flex;
-    position: relative;
-}
-
-.js {
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
-
-}
-
-.js {
-    transition: translateX 0.5s;
-}
-
-.js:hover {
-    transform: translateX(-10px);
 }
 
 @keyframes up-and-down {
@@ -513,5 +483,84 @@ footer {
     animation-iteration-count: infinite;
     position: relative;
     top: 25px;
+    color: #bcb8b1;
+}
 
+
+/*其他*/
+.clearfix {
+    clear: both;
+}
+
+
+
+/*footer設定*/
+footer {
+    background-color: #cc8b86;
+    padding: 20px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+
+}
+
+/*按鈕*/
+.up {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background-color: #fed0bb;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.down {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fed0bb;
+    border-radius: 50px;
+    padding: 10px;
+    transform: scaleY(-1);
+}
+
+
+.allschool {
+    display: flex;
+    position: relative;
+}
+
+.js {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+.click {
+    width: 35px;
+    position: relative;
+    top: 230px;
+    margin-left: -10px;
+    animation-timing-function: linear;
+    animation-name: move-right-left;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes move-right-left {
+    from {
+        transform: translateX(5px);
+    }
+
+    to {
+        transform: translateX(-5px);
+    }
 }
