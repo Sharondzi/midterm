@@ -56,7 +56,7 @@ main {
 
 article {
     float: left;
-    width: 73%;
+    width: 80%;
 }
 
 
@@ -95,7 +95,7 @@ h1 {
     position: relative;
     left: 12.5cm;
     top: 90px;
-    width: 13cm;
+    width: 16cm;
 }
 
 .activitytext {
@@ -192,6 +192,7 @@ h1 {
 .back:hover {
     opacity: 1;
 }
+
 
 .file {
     color: #5B5B5B;
@@ -411,6 +412,7 @@ hr {
     text-align: center;
     color: #5B5B5B;
     font-family: 微軟正黑體;
+
 }
 
 .awardtxt {
@@ -431,10 +433,16 @@ hr {
 }
 
 
+.award:hover {
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transform: scale(1.25);
+}
+
 /*側邊設定*/
 aside {
     float: right;
-    width: 20%;
+    width: 15%;
     margin-top: 90px;
     text-align: center;
     background-color: #eed7c5;
